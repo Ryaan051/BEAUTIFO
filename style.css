@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    font-family: "Montserrat";
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+.logo img{
+    width: 150px;
+    height: 150px;
+}
+.logo{
+    display: flex;
+}
+.logo h1{
+    margin-top: 45px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+ul{
+    list-style: none;
+    gap: 45px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.icon img{
+    width: 25px;
+    margin-left: 13px;
+    margin-bottom: 20px;
+}
+.main {
+    position: relative;
+    padding: 40px;
+    background-image: url('images/face.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 94%;
+    height: 440px;
+    border-radius: 10px;
+    color: white;
+    z-index: 1;
+   
+}
+.main::before {
+    content: ''; /* Empty content for the overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay color */
+    border-radius: 10px; /* Match border-radius for the overlay */
+    z-index: -1;
+}
+.main h2{
+    font-size: 39px;
+}
+.main h2 span{
+    color: #d56495;
+}
+.main p{
+    margin: 20px 0px;
+    font-size: 15px;
+    color: white;
+}
+.main-right{
+    margin-left: 760px;
+    margin-top: 90px;
+    color: white;
+    z-index: 2;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+.select{
+    text-align: center;
+}
+.select h2{
+    margin: 10px 0;
+    font-weight: bold;
+}
+.select p {
+    color: gray;
+    margin: 10px 0;
+}
+.container {
+    width: 90%;
+    margin-left: 90px;
+    align-items: center;
+}
+.products {
+    margin-left: 85px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    gap: 20px;
+}
+.product1 {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+.product1 img {
+    width: 150px;
+    height: 200px;
+    margin-bottom: 15px;
+}
+.product1 h3 {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 10px;
+}
+.product1 .price {
+    font-size: 18px;
+    font-weight: bold;
+    color:gray;
+}
+.nature{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+.collection2{
+    width: 300px;
+    height: 160px;
+    box-shadow: 0px 3px 6px rgb(155,150,150);
+    background-image: url(images/facemsk.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px 0;
+    padding: 20px;
+    margin-right:70px ;
+    border-radius: 8px;
+}
+.collection2 {
+    margin-top: 10px;
+}
+.collection h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+
+}
+.collection2 h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 6px;
+
+}
+.color{
+    font-size: 14px;
+    color: coral;
+    margin-bottom: 5px;
+
+}
+.shop-btn{
+    font-size: 14px;
+    color: black;
+}
+.collection{
+    width: 300px;
+    height: 160px;
+    background-image: url(images/nature.jpeg);
+    box-shadow: 0px 3px 6px rgb(155,150,150);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 12px 0px;
+    padding: 16px;
+    margin-right:10px ;
+    border-radius: 3px;
+}
+.footer{
+    text-align: center;
+    background-color: whitesmoke;
+    margin-top: 30px;
+    padding: 20px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+input{
+  padding: 10px;
+  width: 250px;
+  border: 1px solid whitesmoke;
+  border-radius: 9px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+
+}
+.footer h3{
+    margin: 15px 0px;
+}
+.footer p{
+    margin: 15px 0px;
+}
+hr{
+    margin: 50px;
+}
+.cdm{
+   display: flex;
+   justify-content: center;
+   margin-top: 7px;
+   gap: 23px;
+}
+
+.copy{
+    background-color: #d56495;
+    color: white;
+    text-align: center;
+    height: 15px;
+    padding: 20px;
+}
+
+@media screen and (max-width:600px) {
+    ul{
+        display: none;
+    }
+
+    .icon{
+        display: none;
+    }
+    .header i{
+        font-size: 40px;
+        padding-top: 45px;
+        padding-left: 30px;
+    }
+    .header h1{
+        padding-right: 13px;
+
+    }
+    .main{
+        display: inline-block;
+        width: 94%;
+    }
+    .main-right{
+        width: 300px;
+        display: block;
+    }
+    .main-right{
+        margin-left: -10px;
+    }
+    .nature{
+        flex-direction: column;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+        margin-left: -100px;
+        column-gap: 100px;
+    
+    }
+}
